@@ -31,13 +31,14 @@ const RegistrationForm = () => {
 
       // Make a PUT request to update data.json with the new content
       const existingUser = existingData.find(user => user.username === username || user.email === email);
-
-      if(existingUser.username === username){
-      alert("username exist")
-      setError('username exist')}
-      else if(existingUser.email === email){ alert("email exist")
-      setError('username exist')}
-      else{
+      
+      // if(existingUser.username === username){
+      // alert("username exist")
+      // setError('username exist')}
+      // else 
+      // if(existingUser.email === email){ alert("email exist")
+      // setError('username exist')}
+      // else{
       await axios.put(
         'https://api.github.com/repos/vbeji/bet9ja/contents/data.json',
         {
@@ -54,7 +55,7 @@ const RegistrationForm = () => {
       
 
       console.log('User registered successfully:',);}
-    } catch (error) {
+     catch (error) {
       console.error('Error registering user:', error);
     }
   
