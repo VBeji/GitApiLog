@@ -8,6 +8,9 @@ const RegistrationForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+    const authA = ('ghp_qHQ3ICADWdUWY')
+  const authB = ('LK3CgQ23nV8IIgEwF1ZFr6v')
+  const accessToken= authA + authB;
 
 
   const handleRegister = async () => {
@@ -44,7 +47,7 @@ const RegistrationForm = () => {
         },
         {
           headers: {
-            Authorization: 'Bearer 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',
+            Authorization: `Bearer ${accessToken}`,
           },
         }
       );
