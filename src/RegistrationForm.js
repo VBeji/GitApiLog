@@ -27,7 +27,7 @@ const RegistrationForm = () => {
 
       // Add new user data to the existing data
       const newData = [...existingData, { username, email, password }];
-      alert("onpoint");
+      alert("onpoint plus plus");
 
       // Make a PUT request to update data.json with the new content
       const existingUser = existingData.find(user => user.username === username || user.email === email);
