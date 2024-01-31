@@ -11,6 +11,7 @@ const RegistrationForm = () => {
     const authA = ('ghp_qHQ3ICADWdUWY')
   const authB = ('LK3CgQ23nV8IIgEwF1ZFr6v')
   const accessToken= authA + authB;
+  alert(7898);
 
 
   const handleRegister = async () => {
